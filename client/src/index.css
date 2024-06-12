@@ -35,7 +35,7 @@ header a {
 /* homepage */
 .home {
   display: grid;
-  grid-template-columns: 3fr 1fr;
+  grid-template-columns: 2fr 1fr;
   gap: 100px;
 }
 .workout-details {
@@ -129,4 +129,11 @@ form.login {
   padding: 20px;
   background: #fff;
   border-radius: 4px;
+}
+
+@media (max-width: 768px) {
+  .home {
+    grid-template-columns: 1fr;
+    gap: 20px; /* Optional: Adjust the gap for smaller screens if needed */
+  }
 }
